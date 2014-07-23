@@ -1,0 +1,9 @@
+._*
+*.DS_Store
+
+BMXGradientView.xcworkspace/xcuserdata/*
+Framework/BMXGradientView.xcodeproj/xcuserdata/*
+
+TestApp/BMXGradientViewTest/BMXGradientViewTest.xcodeproj/xcuserdata/max.xcuserdatad/xcschemes/xcschememanagement.plist
+
+TestApp/BMXGradientViewTest/BMXGradientViewTest.xcodeproj/xcuserdata/max.xcuserdatad/xcschemes/BMXGradientViewTest.xcscheme

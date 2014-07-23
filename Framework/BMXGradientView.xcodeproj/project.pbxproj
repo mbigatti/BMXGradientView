@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		500AA2B2197D392800D459EA /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500AA2B1197D392800D459EA /* UIColor+RGB.swift */; };
+		504A4BC8197D34E40054B01F /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 504A4BC7197D34E30054B01F /* View.xib */; };
 		50B85BC3197D3110009138CF /* BMXGradientView.h in Headers */ = {isa = PBXBuildFile; fileRef = 50B85BC2197D3110009138CF /* BMXGradientView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		50B85BC9197D3111009138CF /* BMXGradientView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B85BBD197D3110009138CF /* BMXGradientView.framework */; };
 		50B85BD0197D3111009138CF /* BMXGradientViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B85BCF197D3111009138CF /* BMXGradientViewTests.swift */; };
+		50B85BDA197D3124009138CF /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B85BD9197D3124009138CF /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +26,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		500AA2B1197D392800D459EA /* UIColor+RGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+RGB.swift"; path = "../../../BMXFlatButton/Framework/BMXFlatButton/UIColor+RGB.swift"; sourceTree = "<group>"; };
+		504A4BC7197D34E30054B01F /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		50B85BBD197D3110009138CF /* BMXGradientView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BMXGradientView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B85BC1197D3110009138CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50B85BC2197D3110009138CF /* BMXGradientView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMXGradientView.h; sourceTree = "<group>"; };
 		50B85BC8197D3111009138CF /* BMXGradientViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BMXGradientViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B85BCE197D3111009138CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50B85BCF197D3111009138CF /* BMXGradientViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMXGradientViewTests.swift; sourceTree = "<group>"; };
+		50B85BD9197D3124009138CF /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +78,10 @@
 			isa = PBXGroup;
 			children = (
 				50B85BC2197D3110009138CF /* BMXGradientView.h */,
+				50B85BD9197D3124009138CF /* GradientView.swift */,
 				50B85BC0197D3110009138CF /* Supporting Files */,
+				500AA2B1197D392800D459EA /* UIColor+RGB.swift */,
+				504A4BC7197D34E30054B01F /* View.xib */,
 			);
 			path = BMXGradientView;
 			sourceTree = "<group>";
@@ -193,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				504A4BC8197D34E40054B01F /* View.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +220,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50B85BDA197D3124009138CF /* GradientView.swift in Sources */,
+				500AA2B2197D392800D459EA /* UIColor+RGB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +332,7 @@
 		50B85BD4197D3111009138CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -329,12 +342,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		50B85BD5197D3111009138CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -396,6 +411,7 @@
 				50B85BD5197D3111009138CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		50B85BD6197D3111009138CF /* Build configuration list for PBXNativeTarget "BMXGradientViewTests" */ = {
 			isa = XCConfigurationList;
@@ -404,6 +420,7 @@
 				50B85BD8197D3111009138CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
