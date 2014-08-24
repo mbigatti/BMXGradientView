@@ -13,11 +13,11 @@ import UIKit
     @IBInspectable public var gradientBreakpoint = 0.85
     @IBInspectable public var gradientPercentage = 0.05
     
-    public init(coder aDecoder: NSCoder!) {
+    public required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
-    public init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
     }
     
@@ -26,8 +26,8 @@ import UIKit
         let context = UIGraphicsGetCurrentContext();
         
         let colorspace = CGColorSpaceCreateDeviceRGB();
-        let color = self.backgroundColor.darkerColor(gradientPercentage).CGColor
-        let colors = [self.backgroundColor.CGColor, self.backgroundColor.CGColor, color] as CFArrayRef
+        let color = self.backgroundColor!.darkerColor(gradientPercentage).CGColor
+        let colors = [self.backgroundColor!.CGColor, self.backgroundColor!.CGColor, color] as CFArrayRef
         let locations = [ 0.0, gradientBreakpoint, 1.0 ] as [CGFloat]
 
         let gradient = CGGradientCreateWithColors(colorspace, colors, locations);
