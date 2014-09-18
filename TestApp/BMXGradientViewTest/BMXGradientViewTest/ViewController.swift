@@ -15,19 +15,19 @@ class ViewController: UITableViewController {
         return true
     }
     
-    override func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return 10;
     }
     
-    override func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell!
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell") as UITableViewCell
         
-        cell.textLabel.text = "Cell #\(indexPath.row)"
+        cell.textLabel!.text = "Cell #\(indexPath.row)"
 
         cell.backgroundView = GradientView(frame: cell.bounds)
-        cell.backgroundView.backgroundColor = UIColor.orangeColor()
+        cell.backgroundView!.backgroundColor = UIColor.orangeColor()
         
         return cell
     }
