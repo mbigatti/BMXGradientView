@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  BMXGradientViewTest
+//  BMXGradientView
+//  https://github.com/mbigatti/BMXGradientView
 //
-//  Created by Massimiliano Bigatti on 21/07/14.
 //  Copyright (c) 2014 Massimiliano Bigatti. All rights reserved.
 //
 
