@@ -30,11 +30,11 @@ import UIKit
     /**
         Construct a gradient view using a custom breakpoint and color darkening percentage.
     
-        :param: breakpoint          gradient breakpoint, defaults to 85%
-        :param: darkeningPercentage color darkening percentage, defaults to 5%
+        - parameter breakpoint:          gradient breakpoint, defaults to 85%
+        - parameter darkeningPercentage: color darkening percentage, defaults to 5%
      */
     public init(breakpoint : Double = 0.85, darkeningPercentage : Double = 0.05) {
-        super.init()
+        super.init(frame: CGRectZero)
         
         self.gradientBreakpoint = breakpoint
         self.gradientDarkeningPercentage = darkeningPercentage

@@ -22,7 +22,7 @@ class ViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell") as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell") as UITableViewCell!
         
         cell.textLabel!.text = "Cell #\(indexPath.row)"
 
